@@ -47,4 +47,4 @@ I also improved the accessibility of the page by adding keyboard focus states, u
 
 ## Author
 
-- Frontend Mentor - [@YOUR_USERNAME](https://www.frontendmentor.io/profile/YOUR_USERNAME)
+- Frontend Mentor - [@visockijanatolij1-sys](https://www.frontendmentor.io/profile/visockijanatolij1-sys)
