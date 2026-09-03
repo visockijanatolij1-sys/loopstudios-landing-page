@@ -1,7 +1,7 @@
 const menu = document.querySelector(".menu");
 const burgerButton = document.querySelector(".menu-burger");
 const menuList = document.querySelector(".menu-list")
-const menuLink = document.querySelectorAll(".menu-link")
+const menuLink = document.querySelectorAll(".menu .menu-link");
 
 
 burgerButton.addEventListener("click", () => {
@@ -12,4 +12,13 @@ burgerButton.addEventListener("click", () => {
         element.classList.toggle("active");
     });
     
+    const isOpen = burgerButton.classList.contains("active");
+
+    burgerButton.setAttribute("aria-expanded", isOpen);
+    burgerButton.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+    document.body.style.overflow = isOpen ? "hidden" : "";
 })
